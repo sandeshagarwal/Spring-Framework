@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans  
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+<bean class="com.first.collections.Emp" name ="emp1">
+<property name="name" value="Sia"></property>
+<property name="phones">
+<list>
+<value>41236587974</value>
+<value>7894561258</value>
+<value>9845671235</value>
+<value>7564891237</value>
+<null/>
+</list>
+</property>
+
+<property name="address">
+<set>
+<value>Delhi</value>
+<value>Bangalore</value>
+<value>Hyderabad</value>
+<value>Jaipur</value>
+</set>
+</property>
+
+<property name="courses">
+<map>
+<entry key="Spring" value="3hours"></entry>
+<entry key="SQL" value="2hours"></entry>
+<entry key="Docker" value="2hours"></entry>
+<entry key="Resume" value="2hours"></entry>
+</map>
+</property>
+
+<property name ="props">
+<props>
+<prop key="name">Sandesh</prop>
+<prop key="Learning">Springboot</prop>
+</props>
+</property>
+
+
+</bean>
+      </beans>

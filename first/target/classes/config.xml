@@ -26,7 +26,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
    <property name="studentAddress" value="Paris">
   </property>
    </bean>
-
+<!-- P schema -->
 <bean class="com.first.Student" name ="student3" p:studentId="41254" p:studentName="Jerry" p:studentAddress="Shanghai"/>
  
   

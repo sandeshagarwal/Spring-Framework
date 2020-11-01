@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:c="http://www.springframework.org/schema/c"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans  
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+      
+ <bean class="com.constructor.Injection.Certi" name="certi1" c:name="Spring Developer">
+<!--  <constructor-arg value="Spring Developer"></constructor-arg> We cannot value above we have to 
+use the parameter of the constructor ie. c.name=value-->
+ </bean>
+  
+  <bean class="com.constructor.Injection.Person" name="person1" c:name="Ram" c:id="15" c:certi-ref="certi1">
+  <constructor-arg name="list">
+  <list>
+  <value>all</value>
+  <value>is</value>
+  <value>well</value>
+  </list>
+  </constructor-arg>
+    </bean>
+  <!-- 
+  <constructor-arg>
+  <value>Ram</value>
+  </constructor-arg>
+  We do not have to give name in constructor injection as it recognizes on the basis of input type
+  If we want we can pas the name also
+   -->
+<!--    <constructor-arg name="name" value="Ram"/>
+   <constructor-arg value="12" type="int"/>
+   <constructor-arg ref="certi1"></constructor-arg> -->
+
+ 
+  
+      </beans>

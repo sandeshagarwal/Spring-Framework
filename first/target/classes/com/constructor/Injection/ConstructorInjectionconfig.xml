@@ -32,6 +32,12 @@ use the parameter of the constructor ie. c.name=value-->
    <constructor-arg value="12" type="int"/>
    <constructor-arg ref="certi1"></constructor-arg> -->
 
+<bean class="com.constructor.Injection.Addition" name ="add1">
+ <constructor-arg value="12" type="int" index="1"/>
+ <constructor-arg value="19" type="int" index="0"/>
+ <!-- Here we can use index to feed the values for a and b index wise like the value given to a is 
+ 19 as we have set the index to "0" other than the default value which will be 12 same for b also -->
+</bean>
  
   
       </beans>

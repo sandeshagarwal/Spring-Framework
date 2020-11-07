@@ -11,6 +11,10 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/constructor/Injection/ConstructorInjectionconfig.xml");
 		Person p1 =(Person)context.getBean("person1");
 		System.out.println(p1);
+		
+		Addition a1 =(Addition)context.getBean("add1");
+		a1.doSum();
+		
 	}
 
 }

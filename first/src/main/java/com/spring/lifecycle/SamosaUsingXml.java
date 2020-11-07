@@ -1,6 +1,9 @@
 package com.spring.lifecycle;
 
-public class Samosa {
+// There are three configuration techniques in Spring Lifecycle 
+// Using Xml, Using Interface, Using Annotation
+
+public class SamosaUsingXml {
 	private double price;
 
 	public double getPrice() {
@@ -12,7 +15,7 @@ public class Samosa {
 		this.price = price;
 	}
 
-	public Samosa() {
+	public SamosaUsingXml() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -32,5 +35,5 @@ public class Samosa {
 		System.out.println("Inside destroy method : bye");
 	}
 	
-	// bean in config file then, first setter is called then, init then, toString then, destroy method is called in bean lifecycle 
+	// bean in config file, then first setter is called, then init, then toString, then destroy method is called in bean lifecycle 
 }
